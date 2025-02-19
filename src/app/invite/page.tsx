@@ -5,13 +5,15 @@ import { Ranking } from './ranking'
 import { Stats } from './stats'
 
 export default function InvitePage() {
+  const inviteLink = 'http://localhost:3000/invite/ndslndslndshy83rlkj'
+
   return (
     <div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">
       <div className="flex flex-col gap-10 w-full max-w-[550px]">
         <Image src={logo} alt="devstage" width={108.5} height={30} />
 
-        <div className="-space-y-2">
-          <h1 className="text-4xl font-semibold font-heading text-gray-100 leading-none ">
+        <div className="-space-y-0">
+          <h1 className="text-4xl font-semibold font-heading text-gray-100 leading-none">
             Inscrição confirmada!
           </h1>
           <p className="text-gray-300">
@@ -31,7 +33,7 @@ export default function InvitePage() {
             </p>
           </div>
 
-          <InviteLinkInput />
+          <InviteLinkInput inviteLink={inviteLink}/>
 
           <Stats />
         </div>
